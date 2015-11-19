@@ -1,0 +1,90 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/abc_list_item_padding_horizontal_material"
+        android:paddingEnd="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="@dimen/abc_list_item_padding_horizontal_material"
+        app:columnCount="2">
+
+        <EditText
+            android:id="@+id/nome"
+            android:layout_width="0dp"
+            android:hint="@string/text_nome_topico"
+            android:inputType="textUri" android:maxLines="1"
+            android:singleLine="true"
+            android:fontFamily="sans-serif-light"
+            android:gravity="left"
+            app:layout_columnWeight="1"
+            app:layout_columnSpan="2"
+            app:layout_gravity="fill_horizontal"
+            android:layout_marginBottom="8dp"
+            />
+
+        <Spinner
+            android:id="@+id/spinner_categoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            app:layout_columnWeight="1"
+            app:layout_columnSpan="2"
+            app:layout_gravity="fill_horizontal"
+            android:layout_marginBottom="8dp"
+            />
+
+        <TextView
+            android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+            android:fontFamily="sans-serif"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            android:text="@string/textEscolherPadrao" />
+
+        <RadioGroup
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            android:id="@+id/radioEscolherPadrao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+            >
+
+            <RadioButton
+                android:id="@+id/rbSim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sim"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rbNao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nao" />
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/bt_add_topico"
+            android:text="@string/bt_add_topico"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal|bottom"
+            />
+
+    </android.support.v7.widget.GridLayout>
+
+</ScrollView>

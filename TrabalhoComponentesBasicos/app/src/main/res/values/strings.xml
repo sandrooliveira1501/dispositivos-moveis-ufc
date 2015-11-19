@@ -1,3 +1,29 @@
 <resources>
-    <string name="app_name">TrabalhoComponentesBasicos</string>
+    <string name="app_name">RepLink</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_add_link">Adicionar Link</string>
+    <string name="action_add_topico">Adicionar Tópico</string>
+    <string name="title_activity_add_topico">Adicionar Tópico</string>
+    <string name="title_activity_add_link">Adicionar Link</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_url">URL</string>
+    <string name="text_descricao">Descrição</string>
+    <string name="bt_add_link">Adicionar Link</string>
+    <string name="text_topico">Tópico</string>
+    <string name="toggle_topico_turn_on">Sem Tópico</string>
+    <string name="toggle_topico_turn_off">Escolher Tópico</string>
+    <string name="mensagem_link_adicionado">Link adicionado</string>
+    <string name="nenhum_link">Nenhum Link</string>
+    <string name="text_nome_topico">Nome Tópico</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="textEscolherPadrao">Escolher Como Padrão</string>
+    <string name="bt_add_topico">Adicionar Tópico</string>
+    <string name="title_activity_links_do_topico">Links</string>
+    <string name="action_listar_links">Exibir Links</string>
+    <string name="title_activity_escolher_plano_de_fundo">EscolherPlanoDeFundoActivity</string>
+    <string name="action_background">Escolher Background</string>
+    <string name="camposInvalidos">Preencha todos os campos!</string>
 </resources>

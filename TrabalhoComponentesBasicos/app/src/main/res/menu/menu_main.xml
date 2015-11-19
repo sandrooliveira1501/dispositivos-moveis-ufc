@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <item android:id="@+id/action_add_link"
+        android:orderInCategory="1" app:showAsAction="never"
+        android:title="@string/action_add_link" />
+
+    <item android:id="@+id/action_add_topico"
+        android:orderInCategory="2" app:showAsAction="never"
+        android:title="@string/action_add_topico" />
+
+    <item android:id="@+id/action_background"
+        android:orderInCategory="3" app:showAsAction="never"
+        android:title="@string/action_background" />
+
+</menu>

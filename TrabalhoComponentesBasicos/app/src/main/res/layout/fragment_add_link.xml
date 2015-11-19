@@ -1,0 +1,86 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/abc_list_item_padding_horizontal_material"
+        android:paddingEnd="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="@dimen/abc_list_item_padding_horizontal_material"
+        app:columnCount="2">
+
+        <EditText
+            android:id="@+id/url"
+            android:layout_width="0dp"
+            android:hint="@string/text_url"
+            android:inputType="textUri" android:maxLines="1"
+            android:singleLine="true"
+            android:fontFamily="sans-serif-light"
+            android:gravity="left"
+            app:layout_columnWeight="1"
+            app:layout_columnSpan="2"
+            app:layout_gravity="fill_horizontal"
+            android:layout_marginBottom="8dp"
+            />
+
+        <EditText
+            android:id="@+id/text_descricao"
+            android:layout_width="0dp"
+            android:hint="@string/text_descricao"
+            android:inputType="textUri" android:maxLines="1"
+            android:singleLine="true"
+            android:fontFamily="sans-serif-light"
+            android:gravity="left"
+            app:layout_columnWeight="1"
+            app:layout_columnSpan="2"
+            app:layout_gravity="fill_horizontal"
+            android:layout_marginBottom="8dp"
+            />
+
+        <AutoCompleteTextView
+            android:id="@+id/text_topico"
+            android:layout_width="0dp"
+            android:hint="@string/text_topico"
+            android:inputType="textAutoComplete" android:maxLines="1"
+            android:singleLine="true"
+            android:fontFamily="sans-serif-light"
+            android:gravity="left"
+            app:layout_columnWeight="1"
+            app:layout_columnSpan="2"
+            app:layout_gravity="fill_horizontal"
+            android:layout_marginBottom="8dp"/>
+
+        <ToggleButton
+            android:id="@+id/toggle_sem_topico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="@string/toggle_topico_turn_on"
+            android:textOff="@string/toggle_topico_turn_off"
+            android:checked="true"
+            android:fontFamily="sans-serif-light"
+            android:gravity="left"
+            app:layout_columnWeight="1"
+            app:layout_columnSpan="2"
+            app:layout_gravity="fill_horizontal"
+            android:layout_marginBottom="8dp"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/bt_add_link"
+            android:text="@string/bt_add_link"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal|bottom"
+            />
+
+    </android.support.v7.widget.GridLayout>
+
+</ScrollView>
