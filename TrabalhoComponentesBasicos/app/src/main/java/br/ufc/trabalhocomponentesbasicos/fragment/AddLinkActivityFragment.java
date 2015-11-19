@@ -16,6 +16,7 @@ import android.widget.ToggleButton;
 
 import java.util.List;
 
+import br.ufc.trabalhocomponentesbasicos.Constantes;
 import br.ufc.trabalhocomponentesbasicos.R;
 import br.ufc.trabalhocomponentesbasicos.controller.ControllerLink;
 import br.ufc.trabalhocomponentesbasicos.controller.ControllerLinkImpl;
@@ -77,6 +78,10 @@ public class AddLinkActivityFragment extends Fragment {
         });
 
         etURL = (EditText) view.findViewById(R.id.url);
+        if(getArguments().getString(Constantes.ARG_URL) != null){
+            etURL.setText(getArguments().getString(Constantes.ARG_URL));
+        }
+
         etDescricao = (EditText) view.findViewById(R.id.text_descricao);
 
         btAddLink = (Button) view.findViewById(R.id.bt_add_link);

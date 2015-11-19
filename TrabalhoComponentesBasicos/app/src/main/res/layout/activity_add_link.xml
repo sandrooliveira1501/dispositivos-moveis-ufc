@@ -17,13 +17,20 @@
     </android.support.design.widget.AppBarLayout>
 
 
-    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        ></FrameLayout>
+
+    <!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/fragment"
         android:name="br.ufc.trabalhocomponentesbasicos.fragment.AddLinkActivityFragment"
         android:layout_width="match_parent" android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:layout="@layout/fragment_add_link" />
+        tools:layout="@layout/fragment_add_link" />-->
 
     <!--<android.support.design.widget.FloatingActionButton android:id="@+id/fab"
         android:layout_width="wrap_content" android:layout_height="wrap_content"

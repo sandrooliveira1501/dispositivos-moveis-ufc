@@ -7,5 +7,6 @@ public class Constantes {
     public static final int SUCESSO = 1;
     public static final int CANCELADO = 0;
     public static final int REQUEST_BACKGROUND = 1;
+    public static final String ARG_URL = "URL";
     public static final String LOG_MENU = "LOG_MENU";
 }
