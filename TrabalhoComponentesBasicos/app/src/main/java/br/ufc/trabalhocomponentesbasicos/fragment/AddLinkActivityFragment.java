@@ -78,7 +78,7 @@ public class AddLinkActivityFragment extends Fragment {
         });
 
         etURL = (EditText) view.findViewById(R.id.url);
-        if(getArguments().getString(Constantes.ARG_URL) != null){
+        if(getArguments() != null && getArguments().getString(Constantes.ARG_URL) != null){
             etURL.setText(getArguments().getString(Constantes.ARG_URL));
         }
 
