@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
+import br.ufc.trabalhocomponentesbasicos.Constantes;
 import br.ufc.trabalhocomponentesbasicos.R;
 import br.ufc.trabalhocomponentesbasicos.SettingsApplication;
 import br.ufc.trabalhocomponentesbasicos.adapter.ImageAdapter;
@@ -51,6 +52,7 @@ public class EscolherPlanoDeFundoActivityFragment extends Fragment {
         MediaPlayer sound = MediaPlayer.create(getContext(), R.raw.sound);
         sound.start();
 
+        getActivity().setResult(Constantes.SUCESSO);
         getActivity().finish();
     }
 

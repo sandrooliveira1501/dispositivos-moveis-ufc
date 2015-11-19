@@ -56,6 +56,23 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        if(requestCode == Constantes.REQUEST_BACKGROUND){
+
+            if(resultCode == Constantes.SUCESSO){
+                SettingsApplication application = (SettingsApplication) getApplication();
+                if(application.getBackgroundImage() != null){
+                    TextView tvBackground = (TextView) findViewById(R.id.background);
+                    tvBackground.setBackgroundResource(application.getBackgroundImage());
+                    tvBackground.setAlpha(0.3f);
+                }
+            }
+        }
+
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
@@ -78,21 +95,11 @@ public class MainActivity extends AppCompatActivity {
         }else if(id == R.id.action_background){
             Log.i(Constantes.LOG_MENU, "Background");
             Intent intent = new Intent(this, EscolherPlanoDeFundoActivity.class);
-            startActivity(intent);
+            startActivityForResult(intent, Constantes.REQUEST_BACKGROUND);
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        SettingsApplication application = (SettingsApplication) getApplication();
-        if(application.getBackgroundImage() != null){
-            TextView tvBackground = (TextView) findViewById(R.id.background);
-            tvBackground.setBackgroundResource(application.getBackgroundImage());
-            tvBackground.setAlpha(0.3f);
-        }
-    }
 }
