@@ -101,7 +101,7 @@ public class AddLinkActivityFragment extends Fragment {
         String url = etURL.getText().toString().trim();
         String nomeTopico = autoTextTopico.getText().toString().trim();
 
-        if(descricao.equals("") || url.equals("") || nomeTopico.equals("")){
+        if(descricao.equals("") || url.equals("") || (nomeTopico.equals("") && (tgEscolherTopico.isChecked() == false))){
             Toast.makeText(getContext(), getResources().getString(R.string.camposInvalidos), Toast.LENGTH_SHORT).show();
         } else {
 
