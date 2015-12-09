@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">StartedSeviceLifeCycle</string>
+    <string name="start_service">Start Service</string>
+    <string name="stop_service">Stop Service</string>
+    <string name="tutorial_parte_2">Tutorial Part 2</string>
+    <string name="title_activity_second_tutorial">SecondTutorialActivity</string>
+    <string name="tutorial_parte_3">Tutorial Part 3</string>
+    <string name="tutorial_01">Tutorial 01</string>
+    <string name="tutorial_02">Tutorial 02</string>
+    <string name="tutorial_03">Iniciar Tutorial 3</string>
+    <string name="title_activity_tutorial3">Tutorial3Activity</string>
+    <string name="title_activity_main2">Main2Activity</string>
 </resources>
