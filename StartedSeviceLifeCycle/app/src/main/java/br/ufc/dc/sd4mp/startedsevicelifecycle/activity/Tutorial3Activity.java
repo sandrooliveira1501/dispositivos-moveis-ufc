@@ -127,14 +127,15 @@ public class Tutorial3Activity extends AppCompatActivity {
     }
 
     @Override
-    protected void onStop() {
-        Log.i(TAG, "onStop");
+    protected void onDestroy() {
+        Log.i(TAG, "onDestroy");
+        Log.i(TAG, "Desfazendo ligação service");
         if(mBound){
             unbindService(mConnection);
             mBound = false;
         }
 
-        super.onStop();
+        super.onDestroy();
     }
 
     private ServiceConnection mConnection = new ServiceConnection() {
