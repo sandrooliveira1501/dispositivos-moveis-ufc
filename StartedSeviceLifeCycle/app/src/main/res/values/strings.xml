@@ -10,4 +10,11 @@
     <string name="tutorial_03">Iniciar Tutorial 3</string>
     <string name="title_activity_tutorial3">Tutorial3Activity</string>
     <string name="title_activity_main2">Main2Activity</string>
+    <string name="n_mero_1">Número 1</string>
+    <string name="n_mero_2">Número 2</string>
+    <string name="text_soma">+</string>
+    <string name="text_subtracao">-</string>
+    <string name="text_multiplicacao">x</string>
+    <string name="text_divisao">/</string>
+    <string name="resultado">Resultado</string>
 </resources>

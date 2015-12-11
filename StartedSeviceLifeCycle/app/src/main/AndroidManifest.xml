@@ -44,7 +44,12 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="br.ufc.dc.sd4mp.startedsevicelifecycle.activity.MainActivity" />
-         </activity>
+        </activity>
+
+        <service
+            android:name=".service.CalculadoraService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>
